@@ -12,7 +12,7 @@ spec:
     app: elasticsearch
     role: master
   ports:
-    - port: 19200
+    - port: 39200
       name: http
     - port: 19300
       name: node-to-node
@@ -31,7 +31,7 @@ spec:
     app: elasticsearch
     role: data
   ports:
-    - port: 19200
+    - port: 39200
       name: http
     - port: 19300
       name: node-to-node
@@ -47,9 +47,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 19200
-      targetPort: 19200
-      nodePort: 19200
+    - port: 39200
+      targetPort: 39200
+      nodePort: 39200
   selector:
     app: elasticsearch
     role: master

@@ -41,7 +41,7 @@ data:
         #- Stdout: {}
         - Elasticsearch:
             hosts:
-                - http://192.168.36.145:19200
+                - http://192.168.36.145:39200
             index: 'gohangout-kafka-dnsmasq-%{+2006-01-02}'
             index_type: "logs"
             bulk_actions: 5000
