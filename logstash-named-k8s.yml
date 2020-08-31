@@ -25,7 +25,7 @@ data:
     output {
       #stdout { codec => rubydebug }
       elasticsearch {
-        hosts => ["192.168.36.145:29200"]
+        hosts => ["192.168.36.145:219200"]
         index => "logstash-kafka-named-%{+YYYY.MM.dd}"
       }
     }

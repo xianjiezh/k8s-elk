@@ -64,9 +64,9 @@ spec:
               cpu: 2.0
           command: ["bash", "-c", "ulimit -l unlimited && sysctl -w vm.max_map_count=262144 && chown -R elasticsearch:elasticsearch /usr/share/elasticsearch/data && exec su elasticsearch docker-entrypoint.sh"]
           ports:
-            - containerPort: 9200
+            - containerPort: 19200
               name: http
-            - containerPort: 9300
+            - containerPort: 19300
               name: transport
           env:
             - name: discovery.seed_hosts

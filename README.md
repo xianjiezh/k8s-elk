@@ -23,7 +23,7 @@ kubectl apply -f es-master.yml
 kubectl apply -f es-data.yml
 
 # 验证es服务
-curl -s http://localhost:29200
+curl -s http://localhost:219200
 ```
 
 ## 部署Kibana
